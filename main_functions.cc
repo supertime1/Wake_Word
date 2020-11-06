@@ -42,7 +42,9 @@ void setup(){
     TF_LITE_REPORT_ERROR(
       error_reporter,
       "Model provided is schema version %d not equal to supported version %d.",
-      model->version(), TFLITE_SCHEMA_VERSION);
+      model->version(),
+      TFLITE_SCHEMA_VERSION
+    );
     return;
   }
 
@@ -65,27 +67,39 @@ void setup(){
 
   //Build an interpreter to run the model with.
   static tflite::MicroInterpreter static_interpreter(
-    model, micro_op_resolver, tensor_arena, kTensorArenaSize, error_reporter);
+    model, micro_op_resolver,tensor_arena, kTensorArenaSize, error_reporter);
+
   interpreter = &static_interpreter;
 
   //Allocate memory from the tensor_arena for the model's tensor
   TfLiteStatus allocate_status = interpreter->AllocateTensors();
   if (allocate_status != kTfLiteOk) {
-    TF_LITE_REPORT_ERROR(error_reporter, "AllocateTensors() failed");
+
+    TF_LITE_REPORT_ERROR(
+      error_reporter,
+      "AllocateTensors() failed"
+    );
     return;
   }
 
   //Get information about the memory area to use for the model's input.
   model_input = interpreter->input(0);
   if ((model_input->dims->size != 2) || (model_input->dims->data[0] != 1)) ||
-  (model_input->dims->data[1] != (kFeatureSliceCount * kFeatureSliceSize)) || (model_input->type != kTfLiteInt8)) {
-    TF_LITE_REPORT_ERROR(error_reporter, "Bad input tensor parameters in model");
+      (model_input->dims->data[1] !=
+        (kFeatureSliceCount * kFeatureSliceSize)) ||
+      (model_input->type != kTfLiteInt8)) {
+
+    TF_LITE_REPORT_ERROR(
+      error_reporter,
+      "Bad input tensor parameters in model"
+    );
     return;
   }
   model_input_buffer = model_input->data.int8;
 
   //Preare to access the audio spectrograms as inputs to the neural network
-  static FeatureProvider static_feature_provider(kFeatureElementCount,feature_buffer);
+  static FeatureProvider static_feature_provider(kFeatureElementCount,
+    feature_buffer);
   feature_provider = &static_feature_provider;
 
   static RecognizeCommands static_recognizer(error_reporter);
