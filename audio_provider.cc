@@ -25,6 +25,59 @@ void CaptureSamples() {
   const int32_t time_in_ms =
     g_latest_audio_timestamp +
     (number_of_samples / (kAudioSampleFrequency / 1000));
+  //Determine the index, in the history of all samples, of the last sample.
+  const int32_t start_sample_offset =
+    g_latest_audio_timestamp * (kAudioSampleFrequency / 1000);
+  //Determine the index of this sample in our ring buffer.
+  const int capture_index = start_sample_offset % kAudioCaptureBufferSize;
+  //Read the data to the correct place in our buffer.
+  PDM.read(g_audio_capture_buffer + capture_index, DEFAULT_PDM_BUFFER_SIZE);
+  //This is how we let the outside world know that new audio data has arrived.
+  g_latest_audio_timestamp = time_in_ms;
+} //CaptureSamples
 
+TfLiteStatus InitAudioRecording(tflite::ErrorReporter* error_reporter) {
+  PDM.onReceive(CaptureSamples);
+  //Start listening for audio: MONO @ 16KHz with gain at 20
+  PDM.begin(1, kAudioSampleFrequency);
+  PDM.setGain(20);
+  //Block until we have our first audio sample.
+  while (!g_latest_audio_timestamp) {
+  }
 
+  return kTfLiteOk;
 }
+
+TfLiteStatus GetAudioSamples(
+  tflite::ErrorReporter* error_reporter,
+  int start_ms, int duration_ms,
+  int* audio_samples_size, int16_t** audio_samples) {
+    //Set everything up to start receiving audio.
+    if (!g_is_audio_initialized) {
+      TfLiteStatus init_status = InitAudioRecording(error_reporter);
+      if (init_status != kTfLiteOk) {
+        return init_status;
+      }
+      g_is_audio_initialized = true;
+    }
+
+    //Determine the index, in the history of all samples, of the first samples
+    //we want
+    const int start_offset = start_ms * (kAudioSampleFrequency / 1000);
+    //Determin how many samples we want in total.
+    const int duration_sample_count =
+      duration_ms * (kAudioSampleFrequency / 1000);
+    for (int i = 0; i < duration_sample_count; ++i) {
+      const int capture_index = (start_offset + i) % kAudioCaptureBufferSize;
+      g_audio_output_buffer[i] = g_audio_capture_buffer[capture_index];
+    }
+
+    *audio_samples_size = kMaxAudioSampleSize;
+    *audio_samples = g_audio_output_buffer;
+
+    return kTfLiteOk;
+} //GetAudioSamples
+
+int32_t LatestAudioTimestamp() { return g_latest_audio_timestamp; }
+
+#endif //ARDUINO_EXCLUDE_CODE
