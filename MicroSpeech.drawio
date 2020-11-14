@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-11-14T06:27:06.450Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="tdnCtgVTmlvmJPxcINhe" version="13.9.7" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2020-11-14T06:28:10.531Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="KUr58mjoMWjO3zYOYGgE" version="13.9.7" type="github" pages="2">
   <diagram id="BdJFewWl0ucDXXYkBtNL" name="Page-1">
-    <mxGraphModel dx="4405" dy="1905" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="5590" dy="2540" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -431,15 +431,6 @@
         <mxCell id="oJmprfa5DRlbVGLE-ODA-254" value="Initiate feature size = total feature elements in 1s, and feature buffer&lt;br&gt;&lt;b&gt;&lt;br&gt;FeatureProvider(&lt;/b&gt;&lt;br&gt;&lt;b&gt;int &lt;/b&gt;feature_size,&lt;br&gt;&lt;b&gt;int8_t* &lt;/b&gt;feature_buffer&lt;b&gt;)&lt;/b&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="oJmprfa5DRlbVGLE-ODA-253">
           <mxGeometry x="20" y="40" width="270" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="3y68LWMNCUZTZ3VG7Q4g-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3y68LWMNCUZTZ3VG7Q4g-8">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1417" y="636" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="1580" y="1810" />
-              <mxPoint x="1580" y="636" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="3y68LWMNCUZTZ3VG7Q4g-16" value="micro_features_generator.h&lt;br&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;Process audio sample into spectrogram&lt;/span&gt;" style="swimlane;html=1;startSize=50;horizontal=1;containerType=tree;align=center;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="1740" y="60" width="550" height="750" as="geometry">
             <mxRectangle x="870" y="80" width="130" height="20" as="alternateBounds" />
@@ -605,6 +596,14 @@
             <Array as="points">
               <mxPoint x="-90" y="2116" />
               <mxPoint x="-90" y="1714" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3y68LWMNCUZTZ3VG7Q4g-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3y68LWMNCUZTZ3VG7Q4g-8" target="Z6s_irhGgKES5QOKB3Jn-51">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1590" y="1695" />
+              <mxPoint x="1590" y="636" />
             </Array>
           </mxGeometry>
         </mxCell>
