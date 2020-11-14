@@ -1,16 +1,16 @@
-<mxfile host="app.diagrams.net" modified="2020-11-14T02:00:54.147Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="cMbKEtH-Vq4adAOKcLGg" version="13.9.7" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2020-11-14T04:27:49.588Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="YhdviqxceK_0Mg_LzAEr" version="13.9.7" type="github" pages="2">
   <diagram id="BdJFewWl0ucDXXYkBtNL" name="Page-1">
     <mxGraphModel dx="1662" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="KxusaVbQvA8CLVQLILRV-35" value="main.cc" style="swimlane;html=1;startSize=20;horizontal=1;childLayout=flowLayout;flowOrientation=north;resizable=0;interRankCellSpacing=50;containerType=tree;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="210" y="70" width="575" height="1432" as="geometry">
+          <mxGeometry x="70" y="60" width="651" height="1495" as="geometry">
             <mxRectangle x="170" y="70" width="80" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="KxusaVbQvA8CLVQLILRV-48" value="setup()" style="swimlane;html=1;startSize=20;horizontal=1;childLayout=flowLayout;flowOrientation=north;resizable=0;interRankCellSpacing=50;containerType=tree;direction=east;flipH=0;flipV=0;fillColor=#fff2cc;strokeColor=#d6b656;rounded=1;" parent="KxusaVbQvA8CLVQLILRV-35" vertex="1" collapsed="1">
-          <mxGeometry x="252.5" y="40" width="70" height="20" as="geometry">
+          <mxGeometry x="290.5" y="40" width="70" height="20" as="geometry">
             <mxRectangle x="37.5" y="40" width="500" height="849" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -144,141 +144,141 @@
         <mxCell id="oJmprfa5DRlbVGLE-ODA-128" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;noEdgeStyle=1;orthogonal=1;" edge="1" source="KxusaVbQvA8CLVQLILRV-48" target="oJmprfa5DRlbVGLE-ODA-129" parent="KxusaVbQvA8CLVQLILRV-35">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="287.5" y="72" />
-              <mxPoint x="287.5" y="98" />
+              <mxPoint x="325.5" y="72" />
+              <mxPoint x="325.5" y="98" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="oJmprfa5DRlbVGLE-ODA-129" value="loop()" style="swimlane;html=1;startSize=20;horizontal=1;childLayout=flowLayout;flowOrientation=north;resizable=0;interRankCellSpacing=50;containerType=tree;direction=east;flipH=0;flipV=0;fillColor=#fff2cc;strokeColor=#d6b656;rounded=1;" vertex="1" parent="KxusaVbQvA8CLVQLILRV-35">
-          <mxGeometry x="20" y="110" width="535" height="1302" as="geometry">
+          <mxGeometry x="20" y="110" width="611" height="1365" as="geometry">
             <mxRectangle x="20" y="110" width="70" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="KxusaVbQvA8CLVQLILRV-132" value="Capture the system current time&lt;br&gt;&lt;br&gt;&lt;b&gt;LatestAudioTimestamp()&lt;/b&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#f8cecc;strokeColor=#b85450;rounded=1;" parent="oJmprfa5DRlbVGLE-ODA-129" vertex="1">
-          <mxGeometry x="20" y="40" width="271.25" height="60" as="geometry" />
+          <mxGeometry x="93.98591368875387" y="40" width="271.25" height="60" as="geometry" />
         </mxCell>
         <mxCell id="KxusaVbQvA8CLVQLILRV-137" value="&lt;b&gt;const int32_t&lt;/b&gt; current_time" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" parent="oJmprfa5DRlbVGLE-ODA-129" vertex="1">
-          <mxGeometry x="68.125" y="157.5" width="175" height="60" as="geometry" />
+          <mxGeometry x="142.11091368875387" y="167.5" width="175" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oJmprfa5DRlbVGLE-ODA-47" value="Initialize how many new audio &lt;br&gt;sample slices are needed to &lt;br&gt;process&lt;br&gt;&lt;b&gt;&lt;br&gt;int&lt;/b&gt;&lt;span&gt;&amp;nbsp;how_many_new_slices = 0&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="oJmprfa5DRlbVGLE-ODA-129">
-          <mxGeometry x="273.125" y="150" width="206.88" height="75" as="geometry" />
+          <mxGeometry x="347.11091368875384" y="150" width="206.88" height="95" as="geometry" />
         </mxCell>
         <mxCell id="KxusaVbQvA8CLVQLILRV-142" value="Capture and process audio data into spectrogram&lt;br&gt;&lt;br&gt;featureprovider -&amp;gt; &lt;b&gt;PopulateFeatureData&lt;/b&gt;(&lt;br&gt;error_reporter, previous_time, current_time, &amp;amp;how_many_new_slices)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#f8cecc;strokeColor=#b85450;rounded=1;" parent="oJmprfa5DRlbVGLE-ODA-129" vertex="1">
-          <mxGeometry x="71.86959430459103" y="275" width="359.18" height="75" as="geometry" />
+          <mxGeometry x="145.69191488634902" y="295" width="359.18" height="90" as="geometry" />
         </mxCell>
         <mxCell id="KxusaVbQvA8CLVQLILRV-146" value="Save the spectrogram into a feature buffer&lt;br&gt;&lt;b&gt;&lt;br&gt;int8_t&lt;/b&gt; feature_buffer" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" parent="oJmprfa5DRlbVGLE-ODA-129" vertex="1">
-          <mxGeometry x="83.4400215808256" y="400" width="273.76" height="60" as="geometry" />
+          <mxGeometry x="156.9180005987976" y="435" width="273.76" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oJmprfa5DRlbVGLE-ODA-39" value="Copy feature buffer to model input buffer&lt;br&gt;&lt;b&gt;&lt;br&gt;int8_t*&lt;/b&gt; model_input_buffer" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" vertex="1" parent="oJmprfa5DRlbVGLE-ODA-129">
-          <mxGeometry x="33.92762300467783" y="510" width="307.29" height="60" as="geometry" />
+          <mxGeometry x="107.04650029939879" y="545" width="307.29" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oJmprfa5DRlbVGLE-ODA-27" value="Invoke the model and process data in model_input_buffer&lt;br&gt;&lt;br&gt;interpreter -&amp;gt; &lt;b&gt;Invoke&lt;/b&gt;()&lt;br&gt;interpreter -&amp;gt;&amp;nbsp;&lt;b&gt;Output&lt;/b&gt;&lt;font color=&quot;#660000&quot;&gt;(&lt;/font&gt;)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#f8cecc;strokeColor=#b85450;rounded=1;" vertex="1" parent="oJmprfa5DRlbVGLE-ODA-129">
-          <mxGeometry x="44.82522442853008" y="620" width="220" height="75" as="geometry" />
+          <mxGeometry x="20" y="655" width="415.17" height="75" as="geometry" />
         </mxCell>
         <mxCell id="oJmprfa5DRlbVGLE-ODA-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;noEdgeStyle=1;orthogonal=1;" edge="1" parent="oJmprfa5DRlbVGLE-ODA-129" source="oJmprfa5DRlbVGLE-ODA-33" target="oJmprfa5DRlbVGLE-ODA-157">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="120.46999999999997" y="889" />
-              <mxPoint x="155.66160493827158" y="915" />
+              <mxPoint x="192.85591368875387" y="924" />
+              <mxPoint x="228.88702479986497" y="950" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="oJmprfa5DRlbVGLE-ODA-33" value="Save the model output&lt;br&gt;&lt;br&gt;&lt;b&gt;TfLiteTensor*&amp;nbsp;&lt;/b&gt;output" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" vertex="1" parent="oJmprfa5DRlbVGLE-ODA-129">
-          <mxGeometry x="32.96999999999997" y="781" width="175" height="60" as="geometry" />
+          <mxGeometry x="105.35591368875387" y="816" width="175" height="60" as="geometry" />
         </mxCell>
         <mxCell id="KxusaVbQvA8CLVQLILRV-138" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;noEdgeStyle=1;orthogonal=1;curved=1;" parent="oJmprfa5DRlbVGLE-ODA-129" source="KxusaVbQvA8CLVQLILRV-132" target="KxusaVbQvA8CLVQLILRV-137" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="155.625" y="112" />
-              <mxPoint x="155.625" y="138" />
+              <mxPoint x="229.61091368875387" y="112" />
+              <mxPoint x="229.61091368875387" y="138" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="KxusaVbQvA8CLVQLILRV-143" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;noEdgeStyle=1;orthogonal=1;curved=1;" parent="oJmprfa5DRlbVGLE-ODA-129" source="KxusaVbQvA8CLVQLILRV-137" target="KxusaVbQvA8CLVQLILRV-142" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="155.625" y="237" />
-              <mxPoint x="164.16459430459105" y="263" />
+              <mxPoint x="229.61091368875387" y="257" />
+              <mxPoint x="237.98691488634904" y="283" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="oJmprfa5DRlbVGLE-ODA-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;noEdgeStyle=1;orthogonal=1;" edge="1" parent="oJmprfa5DRlbVGLE-ODA-129" source="oJmprfa5DRlbVGLE-ODA-47" target="KxusaVbQvA8CLVQLILRV-142">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="376.565" y="237" />
-              <mxPoint x="338.7545943045911" y="263" />
+              <mxPoint x="450.5509136887539" y="257" />
+              <mxPoint x="412.5769148863491" y="283" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="KxusaVbQvA8CLVQLILRV-147" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;noEdgeStyle=1;orthogonal=1;curved=1;" parent="oJmprfa5DRlbVGLE-ODA-129" source="KxusaVbQvA8CLVQLILRV-142" target="KxusaVbQvA8CLVQLILRV-146" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="251.45959430459104" y="362" />
-              <mxPoint x="220.3200215808256" y="388" />
+              <mxPoint x="325.28191488634906" y="397" />
+              <mxPoint x="293.79800059879756" y="423" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="oJmprfa5DRlbVGLE-ODA-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;noEdgeStyle=1;orthogonal=1;" edge="1" parent="oJmprfa5DRlbVGLE-ODA-129" source="KxusaVbQvA8CLVQLILRV-146" target="oJmprfa5DRlbVGLE-ODA-39">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="4755.110000000001" y="7650" as="targetPoint" />
+            <mxPoint x="6410.469798177088" y="8450" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="220.3200215808256" y="472" />
-              <mxPoint x="187.5726230046778" y="498" />
+              <mxPoint x="293.79800059879756" y="507" />
+              <mxPoint x="260.6915002993988" y="533" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="oJmprfa5DRlbVGLE-ODA-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;noEdgeStyle=1;orthogonal=1;" edge="1" parent="oJmprfa5DRlbVGLE-ODA-129" source="oJmprfa5DRlbVGLE-ODA-39" target="oJmprfa5DRlbVGLE-ODA-27">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="187.5726230046778" y="582" />
-              <mxPoint x="154.82522442853008" y="608" />
+              <mxPoint x="260.6915002993988" y="617" />
+              <mxPoint x="227.58499999999998" y="643" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="oJmprfa5DRlbVGLE-ODA-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;noEdgeStyle=1;orthogonal=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" target="oJmprfa5DRlbVGLE-ODA-33" source="oJmprfa5DRlbVGLE-ODA-27" parent="oJmprfa5DRlbVGLE-ODA-129">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="5160.109999999996" y="8905" as="sourcePoint" />
+            <mxPoint x="6815.469798177084" y="9705" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="154.82522442853008" y="707" />
-              <mxPoint x="120.46999999999997" y="733" />
+              <mxPoint x="227.58499999999998" y="742" />
+              <mxPoint x="192.85591368875387" y="768" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="oJmprfa5DRlbVGLE-ODA-165" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;noEdgeStyle=1;orthogonal=1;" edge="1" parent="oJmprfa5DRlbVGLE-ODA-129" source="oJmprfa5DRlbVGLE-ODA-157" target="oJmprfa5DRlbVGLE-ODA-163">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="249.7791049382716" y="1014" />
-              <mxPoint x="251.0407098765432" y="1040" />
+              <mxPoint x="323.00452479986495" y="1049" />
+              <mxPoint x="324.3056359109761" y="1075" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="oJmprfa5DRlbVGLE-ODA-157" value="Run multiple inferences and average the results&lt;br&gt;recognizer-&amp;gt;&lt;b&gt;ProcessLatestResults&lt;/b&gt;(&lt;br&gt;output, current_time, &amp;amp;found_command, &amp;amp;score, &amp;amp;is_new_command)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#f8cecc;strokeColor=#b85450;rounded=1;" vertex="1" parent="oJmprfa5DRlbVGLE-ODA-129">
-          <mxGeometry x="56.54410493827157" y="927" width="386.47" height="75" as="geometry" />
+          <mxGeometry x="129.76952479986497" y="962" width="386.47" height="75" as="geometry" />
         </mxCell>
         <mxCell id="oJmprfa5DRlbVGLE-ODA-160" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;noEdgeStyle=1;orthogonal=1;" edge="1" parent="oJmprfa5DRlbVGLE-ODA-129" source="oJmprfa5DRlbVGLE-ODA-159" target="oJmprfa5DRlbVGLE-ODA-157">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="376.565" y="889" />
-              <mxPoint x="343.8966049382716" y="915" />
+              <mxPoint x="450.5509136887539" y="924" />
+              <mxPoint x="417.122024799865" y="950" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="oJmprfa5DRlbVGLE-ODA-159" value="Initialize pointer to save command, prediction scores and whether this is a new command&lt;br&gt;&lt;br&gt;&lt;b&gt;const char* &lt;/b&gt;found_command = nullptr&lt;br&gt;&lt;b&gt;uint8_t &lt;/b&gt;score = 0&lt;br&gt;&lt;b&gt;bool &lt;/b&gt;is_new_command = false" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" vertex="1" parent="oJmprfa5DRlbVGLE-ODA-129">
-          <mxGeometry x="237.97" y="745" width="277.19" height="132" as="geometry" />
+          <mxGeometry x="310.35591368875384" y="780" width="280.39" height="132" as="geometry" />
         </mxCell>
         <mxCell id="oJmprfa5DRlbVGLE-ODA-167" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;noEdgeStyle=1;orthogonal=1;" edge="1" parent="oJmprfa5DRlbVGLE-ODA-129" source="oJmprfa5DRlbVGLE-ODA-163" target="oJmprfa5DRlbVGLE-ODA-166">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="251.0407098765432" y="1144" />
-              <mxPoint x="251.04070987654322" y="1170" />
+              <mxPoint x="324.3056359109761" y="1179" />
+              <mxPoint x="324.3056359109761" y="1205" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="oJmprfa5DRlbVGLE-ODA-163" value="&lt;b&gt;Updated&lt;/b&gt;:&lt;br&gt;error_reporter; current_time&lt;br&gt;found_command; score&lt;br&gt;is_new_command" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" vertex="1" parent="oJmprfa5DRlbVGLE-ODA-129">
-          <mxGeometry x="127.29070987654319" y="1052" width="247.5" height="80" as="geometry" />
+          <mxGeometry x="200.5556359109761" y="1087" width="247.5" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="oJmprfa5DRlbVGLE-ODA-166" value="Blink the LED as a respond to the command&lt;br&gt;&lt;b&gt;RespondToCommand&lt;/b&gt;(&lt;br&gt;error_reporter,&lt;br&gt;current_time,&lt;br&gt;found_command,&lt;br&gt;score,&lt;br&gt;is_new_command" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#f8cecc;strokeColor=#b85450;rounded=1;" vertex="1" parent="oJmprfa5DRlbVGLE-ODA-129">
-          <mxGeometry x="48.4357098765432" y="1182" width="405.21" height="100" as="geometry" />
+        <mxCell id="oJmprfa5DRlbVGLE-ODA-166" value="Blink the LED as a respond to the command&lt;br&gt;&lt;br&gt;&lt;b&gt;RespondToCommand&lt;/b&gt;(&lt;br&gt;error_reporter,&lt;br&gt;current_time,&lt;br&gt;found_command,&lt;br&gt;score,&lt;br&gt;is_new_command" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#f8cecc;strokeColor=#b85450;rounded=1;" vertex="1" parent="oJmprfa5DRlbVGLE-ODA-129">
+          <mxGeometry x="121.7006359109761" y="1217" width="405.21" height="128" as="geometry" />
         </mxCell>
         <mxCell id="Z6s_irhGgKES5QOKB3Jn-21" value="audio_provider.h&lt;br&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;Captures audio samples from microphone&lt;/span&gt;" style="swimlane;html=1;startSize=50;horizontal=1;containerType=tree;align=center;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="860" y="80" width="550" height="850" as="geometry">
