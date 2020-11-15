@@ -1,1 +1,84 @@
-<mxfile host="app.diagrams.net" modified="2020-11-15T05:44:56.646Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" version="13.9.7" etag="Kv_7yN0MJSZexNbxDdT5" type="github"><diagram id="MmiNpSneBf-ED-Y9xAty">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-11-15T05:54:01.086Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="DQcF1dLLHvmz7Nz2jPUL" version="13.9.7" type="github">
+  <diagram id="MmiNpSneBf-ED-Y9xAty" name="Page-1">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sKsJ3m-dA19H5U0Ti4nL-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sKsJ3m-dA19H5U0Ti4nL-1" target="sKsJ3m-dA19H5U0Ti4nL-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sKsJ3m-dA19H5U0Ti4nL-1" value="PPG sensor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sKsJ3m-dA19H5U0Ti4nL-2" value="Main loop" style="swimlane;html=1;startSize=20;horizontal=1;childLayout=flowLayout;flowOrientation=north;resizable=0;interRankCellSpacing=50;containerType=tree;" vertex="1" parent="1">
+          <mxGeometry x="340" y="100" width="240" height="680" as="geometry" />
+        </mxCell>
+        <mxCell id="sKsJ3m-dA19H5U0Ti4nL-3" value="&lt;div style=&quot;&quot;&gt;&lt;b&gt;PPG waveform provider&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;Capture PPG waveform samples from PPG sensor" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="sKsJ3m-dA19H5U0Ti4nL-2">
+          <mxGeometry x="20" y="40" width="199.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sKsJ3m-dA19H5U0Ti4nL-4" value="&lt;div&gt;&lt;b&gt;Feature provider&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Converts raw PPG data into spectrograms or other features" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="sKsJ3m-dA19H5U0Ti4nL-2">
+          <mxGeometry x="24.75" y="170" width="190" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="sKsJ3m-dA19H5U0Ti4nL-5" value="" style="html=1;curved=1;noEdgeStyle=1;orthogonal=1;" edge="1" parent="sKsJ3m-dA19H5U0Ti4nL-2" source="sKsJ3m-dA19H5U0Ti4nL-3" target="sKsJ3m-dA19H5U0Ti4nL-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="119.75" y="132" />
+              <mxPoint x="119.75" y="158" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sKsJ3m-dA19H5U0Ti4nL-12" value="" style="html=1;curved=1;noEdgeStyle=1;orthogonal=1;" edge="1" target="sKsJ3m-dA19H5U0Ti4nL-13" source="sKsJ3m-dA19H5U0Ti4nL-4" parent="sKsJ3m-dA19H5U0Ti4nL-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="519.75" y="340" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="119.75" y="267" />
+              <mxPoint x="119.75" y="293" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sKsJ3m-dA19H5U0Ti4nL-13" value="&lt;div&gt;&lt;b&gt;TF Lite interpreter&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;Runs the model" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="sKsJ3m-dA19H5U0Ti4nL-2">
+          <mxGeometry x="24.75" y="305" width="190" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="sKsJ3m-dA19H5U0Ti4nL-14" value="" style="html=1;curved=1;noEdgeStyle=1;orthogonal=1;" edge="1" target="sKsJ3m-dA19H5U0Ti4nL-15" source="sKsJ3m-dA19H5U0Ti4nL-13" parent="sKsJ3m-dA19H5U0Ti4nL-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="499.75" y="435" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="119.75" y="402" />
+              <mxPoint x="119.75" y="428" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sKsJ3m-dA19H5U0Ti4nL-15" value="&lt;div&gt;&lt;b&gt;Pattern recognizer&lt;/b&gt;&lt;/div&gt;&lt;br&gt;Uses inference output to decide if certain pattern (e.g. AF) was detected" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="sKsJ3m-dA19H5U0Ti4nL-2">
+          <mxGeometry x="24.75" y="440" width="190" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="sKsJ3m-dA19H5U0Ti4nL-16" value="" style="html=1;curved=1;noEdgeStyle=1;orthogonal=1;" edge="1" target="sKsJ3m-dA19H5U0Ti4nL-17" source="sKsJ3m-dA19H5U0Ti4nL-15" parent="sKsJ3m-dA19H5U0Ti4nL-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="479.75" y="530" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="119.75" y="537" />
+              <mxPoint x="119.75" y="563" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sKsJ3m-dA19H5U0Ti4nL-17" value="&lt;div&gt;&lt;b&gt;Pattern responder&lt;/b&gt;&lt;/div&gt;&lt;br&gt;Takes action based on which pattern was detected" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="sKsJ3m-dA19H5U0Ti4nL-2">
+          <mxGeometry x="24.75" y="575" width="190" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="sKsJ3m-dA19H5U0Ti4nL-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sKsJ3m-dA19H5U0Ti4nL-19" target="sKsJ3m-dA19H5U0Ti4nL-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sKsJ3m-dA19H5U0Ti4nL-19" value="Accelerometer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sKsJ3m-dA19H5U0Ti4nL-21" value="&lt;div&gt;&lt;b&gt;Model&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;Trained to classify&amp;nbsp;&lt;br&gt;&quot;Afib&quot;, &quot;NSR&quot; and &quot;Other rhythm&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="410" width="180" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="sKsJ3m-dA19H5U0Ti4nL-22" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="sKsJ3m-dA19H5U0Ti4nL-13" target="sKsJ3m-dA19H5U0Ti4nL-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="420" as="sourcePoint" />
+            <mxPoint x="450" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
